@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>325</width>
+    <height>534</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>YoutubeDownloader</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>interface/icons/youtube.png</normaloff>interface/icons/youtube.png</iconset>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout_2">
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout_main">
+      <item>
+       <widget class="QFrame" name="frame_main">
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <layout class="QGridLayout" name="gridLayout">
+         <item row="0" column="0">
+          <layout class="QVBoxLayout" name="verticalLayout_program" stretch="3,1,1,1">
+           <item>
+            <layout class="QVBoxLayout" name="verticalLayout_thumbnail">
+             <item>
+              <widget class="QFrame" name="frame_thumbnail">
+               <property name="frameShape">
+                <enum>QFrame::StyledPanel</enum>
+               </property>
+               <property name="frameShadow">
+                <enum>QFrame::Raised</enum>
+               </property>
+               <layout class="QVBoxLayout" name="verticalLayout_3">
+                <item>
+                 <layout class="QVBoxLayout" name="verticalLayout_thumbnail_main">
+                  <item>
+                   <widget class="QLabel" name="qlabel_thumbnail">
+                    <property name="text">
+                     <string/>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </item>
+               </layout>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QVBoxLayout" name="verticalLayout_url_fetch">
+             <item>
+              <widget class="QFrame" name="frame_url_fetch">
+               <property name="frameShape">
+                <enum>QFrame::StyledPanel</enum>
+               </property>
+               <property name="frameShadow">
+                <enum>QFrame::Raised</enum>
+               </property>
+               <layout class="QVBoxLayout" name="verticalLayout_4">
+                <item>
+                 <layout class="QHBoxLayout" name="horizontalLayout_url_fetch_main" stretch="3,1">
+                  <item>
+                   <layout class="QVBoxLayout" name="verticalLayout_url">
+                    <item>
+                     <widget class="QLineEdit" name="lineEdit_url">
+                      <property name="placeholderText">
+                       <string>Youtube Video URL</string>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </item>
+                  <item>
+                   <layout class="QVBoxLayout" name="verticalLayout_fetch">
+                    <item>
+                     <widget class="QPushButton" name="pushButton_fetch">
+                      <property name="text">
+                       <string>FETCH</string>
+                      </property>
+                      <property name="icon">
+                       <iconset>
+                        <normaloff>interface/icons/fetch.png</normaloff>interface/icons/fetch.png</iconset>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </item>
+                 </layout>
+                </item>
+               </layout>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QVBoxLayout" name="verticalLayout_progress">
+             <item>
+              <widget class="QFrame" name="frame_progress">
+               <property name="frameShape">
+                <enum>QFrame::StyledPanel</enum>
+               </property>
+               <property name="frameShadow">
+                <enum>QFrame::Raised</enum>
+               </property>
+               <layout class="QVBoxLayout" name="verticalLayout_6">
+                <item>
+                 <layout class="QVBoxLayout" name="verticalLayout_progress_main">
+                  <item>
+                   <widget class="QProgressBar" name="progressBar">
+                    <property name="enabled">
+                     <bool>false</bool>
+                    </property>
+                    <property name="value">
+                     <number>0</number>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </item>
+               </layout>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QVBoxLayout" name="verticalLayout_quality_download">
+             <item>
+              <widget class="QFrame" name="frame_quality_download">
+               <property name="frameShape">
+                <enum>QFrame::StyledPanel</enum>
+               </property>
+               <property name="frameShadow">
+                <enum>QFrame::Raised</enum>
+               </property>
+               <layout class="QVBoxLayout" name="verticalLayout_5">
+                <item>
+                 <layout class="QHBoxLayout" name="horizontalLayout_quality_download_main">
+                  <item>
+                   <layout class="QVBoxLayout" name="verticalLayout_quality">
+                    <item>
+                     <widget class="QComboBox" name="comboBox_quality">
+                      <property name="enabled">
+                       <bool>false</bool>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </item>
+                  <item>
+                   <layout class="QHBoxLayout" name="horizontalLayout_download">
+                    <item>
+                     <widget class="QPushButton" name="pushButton">
+                      <property name="enabled">
+                       <bool>false</bool>
+                      </property>
+                      <property name="text">
+                       <string>DOWNLOAD</string>
+                      </property>
+                      <property name="icon">
+                       <iconset>
+                        <normaloff>interface/icons/download.png</normaloff>interface/icons/download.png</iconset>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </item>
+                 </layout>
+                </item>
+               </layout>
+              </widget>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>325</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

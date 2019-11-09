@@ -2,8 +2,7 @@
 
 '''
 ********************************************************************************
-This is the entry point of the Network Analyzer Program that uses monitor
-classes and  interface.
+This is the entry point of the Program.
 ********************************************************************************
 '''
 
